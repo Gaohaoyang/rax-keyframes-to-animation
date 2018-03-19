@@ -1,6 +1,7 @@
 {
-  "name": "rax-keyframesToTransition",
+  "name": "rax-keyframes-to-transition",
   "author": "HyG",
+  "main": "src/keyframesToTransition.js",
   "version": "0.0.0",
   "scripts": {
     "start": "rax-scripts start",
@@ -9,12 +10,13 @@
   },
   "dependencies": {
     "rax": "^0.5.4",
+    "rax-text": "^0.5.4",
     "rax-view": "^0.5.4",
-    "rax-text": "^0.5.4"
+    "universal-transition": "^0.5.4"
   },
   "devDependencies": {
-    "rax-scripts": "^0.5.4",
     "babel-eslint": "^7.1.0",
-    "eslint": "^3.10.0"
+    "eslint": "^3.10.0",
+    "rax-scripts": "^0.5.4"
   }
 }
