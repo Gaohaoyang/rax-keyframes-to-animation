@@ -1,0 +1,20 @@
+{
+  "name": "rax-keyframesToTransition",
+  "author": "HyG",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "rax-scripts start",
+    "build": "rax-scripts build",
+    "lint": "eslint --ext .js --ext .jsx ./src"
+  },
+  "dependencies": {
+    "rax": "^0.5.4",
+    "rax-view": "^0.5.4",
+    "rax-text": "^0.5.4"
+  },
+  "devDependencies": {
+    "rax-scripts": "^0.5.4",
+    "babel-eslint": "^7.1.0",
+    "eslint": "^3.10.0"
+  }
+}
