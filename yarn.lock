@@ -3884,6 +3884,14 @@ rax-hot-module-replacement-webpack-plugin@^0.5.4:
     tapable "^0.2.6"
     webpack-sources "^0.2.3"
 
+rax-picker@^0.5.4:
+  version "0.5.4"
+  resolved "https://registry.npmjs.org/rax-picker/-/rax-picker-0.5.4.tgz#52e30b20b5036e2c151ff8f2f2dfff0cd69fef2c"
+  dependencies:
+    rax-text "^0.5.4"
+    rax-touchable "^0.5.4"
+    universal-env "^0.5.4"
+
 rax-scripts@^0.5.4:
   version "0.5.4"
   resolved "https://registry.npmjs.org/rax-scripts/-/rax-scripts-0.5.4.tgz#bea6af9d6bdb1ed80516a607be45b9f1c6824958"
@@ -3917,6 +3925,13 @@ rax-text@^0.5.4:
   version "0.5.4"
   resolved "https://registry.npmjs.org/rax-text/-/rax-text-0.5.4.tgz#ba4db71f051d699db9a71059c6c19058ef5d7f78"
   dependencies:
+    universal-env "^0.5.4"
+
+rax-touchable@^0.5.4:
+  version "0.5.4"
+  resolved "https://registry.npmjs.org/rax-touchable/-/rax-touchable-0.5.4.tgz#c011797e4d3815ab18e7954d9216d264c4ff78a7"
+  dependencies:
+    rax-view "^0.5.4"
     universal-env "^0.5.4"
 
 rax-view@^0.5.4:

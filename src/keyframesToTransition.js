@@ -2,7 +2,7 @@
  * @Author: ChuanShi.ghy
  * @Date: 2018-03-19 13:08:18
  * @Last Modified by: ChuanShi.ghy
- * @Last Modified time: 2018-03-19 16:44:16
+ * @Last Modified time: 2018-03-19 17:16:20
  */
 import transition from 'universal-transition';
 
@@ -11,15 +11,9 @@ const keyframesToTransition = (box, animation, keyframes) => {
   const keyframesParams = getKeyframesParams(keyframes, animationParam)
   let i = 1;
 
-  // console.log('------------------------------------');
-  // console.log(animationParam);
-  // console.log('------------------------------------');
-  // console.log(keyframesParams)
-
   const runOnce = () => {
     transition(box, {
-      transform: keyframesParams[i].transform,
-      opacity: keyframesParams[i].opacity,
+      ...keyframesParams[i].styles,
     }, {
       timingFunction: animation.timingFunction,
       delay: 0,
@@ -80,8 +74,10 @@ const getKeyframesParams = (keyframesStr, animationParam) => {
     return {
       timePoint: animationParam.totalDuration * percentage * 0.01,
       percentage,
-      transform,
-      opacity,
+      styles:{
+        transform,
+        opacity,
+      }
     }
   });
 

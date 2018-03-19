@@ -2,75 +2,84 @@
  * @Author: ChuanShi.ghy
  * @Date: 2018-03-19 13:08:12
  * @Last Modified by: ChuanShi.ghy
- * @Last Modified time: 2018-03-19 16:59:17
+ * @Last Modified time: 2018-03-19 21:14:41
  */
 import { createElement, Component, render, findDOMNode } from 'rax';
 import View from 'rax-view';
-import transition from 'universal-transition';
+import Text from 'rax-text';
+import Picker from 'rax-picker';
 import keyframesToTransition from './keyframesToTransition.js';
+import keyframesExamples from './keyframesExamples';
 
 import './App.css';
 
-const animation = `
-  {
-    animation: animationFrames ease 1s;
-    animation-iteration-count: 1;
-    transform-origin: 50% 50%;
-  }
-`
-const keyframes = `
-  @keyframes animationFrames{
-    0% {
-      transform:  translate(0px,0px)  rotate(0deg) ;
-    }
-    15% {
-      transform:  translate(-25px,0px)  rotate(-5deg) ;
-      opacity: 0.9;
-    }
-    30% {
-      transform:  translate(20px,0px)  rotate(3deg) ;
-      opacity: 0.8;
-    }
-    45% {
-      transform:  translate(-15px,0px)  rotate(-3deg) ;
-      opacity: 0.7;
-    }
-    60% {
-      transform:  translate(10px,0px)  rotate(2deg) ;
-      opacity: 0.6;
-    }
-    75% {
-      transform:  translate(-5px,0px)  rotate(-1deg) ;
-      opacity: 0.4;
-    }
-    100% {
-      transform:  translate(0px,0px)  rotate(0deg) ;
-      opacity: 0.1;
-    }
-  }
-`
-
 class App extends Component {
+
+  state = {
+    selectedValue: 0,
+  }
+
   componentDidMount = () => {
+    this.runAnimation();
+  }
 
-
-
+  runAnimation = (index = 0) => {
     const box = findDOMNode(this.box); // 获取元素
-
     // 调用动画方法
     setTimeout(() => {
-      keyframesToTransition(box, animation, keyframes);
+      keyframesToTransition(box, keyframesExamples[index].animation, keyframesExamples[index].keyframes);
     }, 40);
   }
 
+  onValueChange = (index) => {
+    this.setState({
+      selectedValue: index,
+    }, () => {
+      this.runAnimation(index);
+    });
+  }
+
   render() {
+
+    const {
+      selectedValue,
+    } = this.state;
+
     return (
-      <View
-        ref={(ref) => {
-          this.box = ref;
-        }}
-        className="container"
-      />
+      <View className="container">
+        <View
+          ref={(ref) => {
+            this.box = ref;
+          }}
+          className="box"
+        >
+          <Text className="boxText">hello</Text>
+        </View>
+        <View className="pickerArea">
+          <Text className="title">点击选择示例动画</Text>
+          <Picker
+            style={{
+              // width: 200,
+              // height: 220,
+              fontSize: 44,
+              border: '1px solid #ddd',
+              borderRadius: '4',
+              color: '#5c8fdb',
+              // lineHeight: 1,
+            }}
+            selectedValue={selectedValue}
+            onValueChange={this.onValueChange}
+          >
+            {
+              keyframesExamples.map((item, index) => (
+                <Picker.Item key={index} value={index} label={item.name} />
+              ))
+            }
+          </Picker>
+        </View>
+
+      </View>
+
     );
   }
 }

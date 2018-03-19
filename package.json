@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "rax": "^0.5.4",
+    "rax-picker": "^0.5.4",
     "rax-text": "^0.5.4",
     "rax-view": "^0.5.4",
     "universal-transition": "^0.5.4"
