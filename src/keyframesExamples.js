@@ -1,48 +1,49 @@
 const keyframesExamples = [{
   name: 'tada',
   animation: `
-      .element-animation{
-        animation: animationFrames linear 1s;
-        animation-iteration-count: 1;
-        transform-origin: 50% 50%;
-      }
-    `,
+    .element-animation{
+      animation: animationFrames linear 1s;
+      animation-iteration-count: 1;
+      transform-origin: 50% 50%;
+    }
+  `,
   keyframes: `
-      @keyframes animationFrames{
-        0% {
-          transform:  rotate(0deg) scale(1.00);
-        }
-        10% {
-          transform:  rotate(-3deg) scale(0.80);
-        }
-        20% {
-          transform:  rotate(-3deg) scale(0.80);
-        }
-        30% {
-          transform:  rotate(3deg) scale(1.20);
-        }
-        40% {
-          transform:  rotate(-3deg) scale(1.20);
-        }
-        50% {
-          transform:  rotate(3deg) scale(1.20);
-        }
-        60% {
-          transform:  rotate(-3deg) scale(1.20);
-        }
-        70% {
-          transform:  rotate(3deg) scale(1.20);
-        }
-        80% {
-          transform:  rotate(-3deg) scale(1.20);
-        }
-        90% {
-          transform:  rotate(3deg) scale(1.20);
-        }
-        100% {
-          transform:  rotate(0deg) scale(1.20);
-        }
+    @keyframes animationFrames{
+      0% {
+        transform:  rotate(0deg) scale(1.00);
+        opacity: 1;
       }
+      10% {
+        transform:  rotate(-3deg) scale(0.80);
+      }
+      20% {
+        transform:  rotate(-3deg) scale(0.80);
+      }
+      30% {
+        transform:  rotate(3deg) scale(1.20);
+      }
+      40% {
+        transform:  rotate(-3deg) scale(1.20);
+      }
+      50% {
+        transform:  rotate(3deg) scale(1.20);
+      }
+      60% {
+        transform:  rotate(-3deg) scale(1.20);
+      }
+      70% {
+        transform:  rotate(3deg) scale(1.20);
+      }
+      80% {
+        transform:  rotate(-3deg) scale(1.20);
+      }
+      90% {
+        transform:  rotate(3deg) scale(1.20);
+      }
+      100% {
+        transform:  rotate(0deg) scale(1.20);
+      }
+    }
     `,
 }, {
   name: 'woble',
@@ -78,7 +79,38 @@ const keyframesExamples = [{
     }
   `,
 }, {
-  name: 'shake',
+  name: 'swing',
+  animation: `
+    .element-animation{
+      animation: animationFrames linear 1s;
+      animation-iteration-count: 1;
+      transform-origin: 50% 0%;
+    }
+  `,
+  keyframes: `
+    @keyframes animationFrames{
+      0% {
+        transform:  rotate(0deg) ;
+      }
+      20% {
+        transform:  rotate(15deg) ;
+      }
+      40% {
+        transform:  rotate(-10deg) ;
+      }
+      60% {
+        transform:  rotate(5deg) ;
+      }
+      80% {
+        transform:  rotate(-5deg) ;
+      }
+      100% {
+        transform:  rotate(0deg) ;
+      }
+    }
+  `,
+}, {
+  name: 'shake with color',
   animation: `
     .element-animation{
       animation: animationFrames linear 1s;
@@ -93,6 +125,7 @@ const keyframesExamples = [{
       }
       10% {
         transform:  translate(-10px,0px)  ;
+        background-color: #ff5000;
       }
       20% {
         transform:  translate(10px,0px)  ;
@@ -102,6 +135,7 @@ const keyframesExamples = [{
       }
       40% {
         transform:  translate(10px,0px)  ;
+        background-color: #FF0036;
       }
       50% {
         transform:  translate(-10px,0px)  ;
@@ -111,6 +145,7 @@ const keyframesExamples = [{
       }
       70% {
         transform:  translate(-10px,0px)  ;
+        background-color: #ff5000;
       }
       80% {
         transform:  translate(10px,0px)  ;
@@ -120,6 +155,39 @@ const keyframesExamples = [{
       }
       100% {
         transform:  translate(0px,0px)  ;
+        background-color: #FF0036;
+      }
+    }
+  `,
+},{
+  name: 'hinge',
+  animation: `
+    .element-animation{
+      animation: animationFrames ease 1s;
+      animation-iteration-count: 1;
+      transform-origin: 0% 0%;
+      animation-fill-mode:forwards; /*when the spec is finished*/
+    }
+  `,
+  keyframes: `
+    @keyframes animationFrames{
+      0% {
+        transform:  rotate(0deg) ;
+      }
+      20% {
+        transform:  rotate(60deg) ;
+      }
+      40% {
+        transform:  rotate(40deg) ;
+      }
+      60% {
+        transform:  rotate(54deg) ;
+      }
+      80% {
+        transform:  rotate(42deg) ;
+      }
+      100% {
+        transform:  rotate(46deg) ;
       }
     }
   `,
@@ -167,16 +235,37 @@ const keyframesExamples = [{
     }
   `,
   keyframes: `
-  @keyframes animationFrames{
-    0% {
-      opacity:1;
-      transform:  rotate(0deg) ;
+    @keyframes animationFrames{
+      0% {
+        opacity:1;
+        transform:  rotate(0deg) ;
+      }
+      100% {
+        opacity:0;
+        transform:  rotate(200deg) ;
+      }
     }
-    100% {
-      opacity:0;
-      transform:  rotate(200deg) ;
+  `,
+}, {
+  name: 'rotate in down',
+  animation: `
+    .element-animation{
+      animation: animationFrames linear 0.7s;
+      animation-iteration-count: 1;
+      transform-origin: 0% 100%;
     }
-  }
+  `,
+  keyframes: `
+    @keyframes animationFrames{
+      0% {
+        opacity:0;
+        transform:  rotate(-90deg) ;
+      }
+      100% {
+        opacity:1;
+        transform:  rotate(0deg) ;
+      }
+    }
   `,
 }]
 

@@ -2,7 +2,7 @@
  * @Author: ChuanShi.ghy
  * @Date: 2018-03-19 13:08:12
  * @Last Modified by: ChuanShi.ghy
- * @Last Modified time: 2018-03-19 21:14:41
+ * @Last Modified time: 2018-03-20 00:40:41
  */
 import { createElement, Component, render, findDOMNode } from 'rax';
 import View from 'rax-view';
@@ -61,7 +61,7 @@ class App extends Component {
             style={{
               // width: 200,
               // height: 220,
-              fontSize: 44,
+              fontSize: 36,
               border: '1px solid #ddd',
               borderRadius: '4',
               color: '#5c8fdb',

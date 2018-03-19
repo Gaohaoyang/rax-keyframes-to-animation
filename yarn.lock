@@ -4857,13 +4857,6 @@ universal-env@^0.5.4:
   version "0.5.4"
   resolved "https://registry.npmjs.org/universal-env/-/universal-env-0.5.4.tgz#d4df26005c961616413d5f3c0b9d8cac0f2e1ff1"
 
-universal-transition@^0.5.4:
-  version "0.5.4"
-  resolved "https://registry.npmjs.org/universal-transition/-/universal-transition-0.5.4.tgz#6b19d376acc2a21dc2b93b006b0fb032a08fe8fe"
-  dependencies:
-    style-unit "^0.5.4"
-    universal-env "^0.5.4"
-
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
