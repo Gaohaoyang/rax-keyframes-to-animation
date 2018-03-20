@@ -6,7 +6,7 @@
   "scripts": {
     "start": "rax-scripts start",
     "build": "rax-scripts build",
-    "lint": "eslint --ext .js --ext .jsx ./src"
+    "lint": "eslint --fix --ext .js --ext .jsx ./src"
   },
   "dependencies": {
     "rax": "^0.5.4",
@@ -17,7 +17,11 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.1.0",
-    "eslint": "^3.10.0",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
     "rax-scripts": "^0.5.4"
   }
 }

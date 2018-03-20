@@ -1,14 +1,14 @@
 const keyframesExamples = [{
-  name: 'tada',
+  name: 'tada 3 times',
   animation: `
     .element-animation{
-      animation: animationFrames linear 1s;
-      animation-iteration-count: 1;
+      animation: tada linear 1s;
+      animation-iteration-count: 3;
       transform-origin: 50% 50%;
     }
   `,
   keyframes: `
-    @keyframes animationFrames{
+    @keyframes tada{
       0% {
         transform:  rotate(0deg) scale(1.00);
         opacity: 1;
@@ -49,12 +49,12 @@ const keyframesExamples = [{
   name: 'woble',
   animation: `
     .element-animation{
-      animation: animationFrames linear 1s;
+      animation: woble linear 1s;
       animation-iteration-count: 1;
       transform-origin: 50% 50%;
     }`,
   keyframes: `
-    @keyframes animationFrames{
+    @keyframes woble{
       0% {
         transform:  translate(0px,0px)  rotate(0deg) ;
       }
@@ -82,13 +82,13 @@ const keyframesExamples = [{
   name: 'swing',
   animation: `
     .element-animation{
-      animation: animationFrames linear 1s;
+      animation: swing linear 1s;
       animation-iteration-count: 1;
       transform-origin: 50% 0%;
     }
   `,
   keyframes: `
-    @keyframes animationFrames{
+    @keyframes swing{
       0% {
         transform:  rotate(0deg) ;
       }
@@ -113,13 +113,13 @@ const keyframesExamples = [{
   name: 'shake with color',
   animation: `
     .element-animation{
-      animation: animationFrames linear 1s;
+      animation: shake linear 1s;
       animation-iteration-count: 1;
       transform-origin: 50% 50%;
     }
   `,
   keyframes: `
-    @keyframes animationFrames{
+    @keyframes shake{
       0% {
         transform:  translate(0px,0px)  ;
       }
@@ -159,18 +159,18 @@ const keyframesExamples = [{
       }
     }
   `,
-},{
+}, {
   name: 'hinge',
   animation: `
     .element-animation{
-      animation: animationFrames ease 1s;
+      animation: hinge ease 1s;
       animation-iteration-count: 1;
       transform-origin: 0% 0%;
       animation-fill-mode:forwards; /*when the spec is finished*/
     }
   `,
   keyframes: `
-    @keyframes animationFrames{
+    @keyframes hinge{
       0% {
         transform:  rotate(0deg) ;
       }
@@ -195,13 +195,13 @@ const keyframesExamples = [{
   name: 'bounce',
   animation: `
     .element-animation{
-      animation: animationFrames linear 0.8s;
+      animation: bounce linear 0.8s;
       animation-iteration-count: 1;
       transform-origin: 50% 50%;
     }
   `,
   keyframes: `
-    @keyframes animationFrames{
+    @keyframes bounce{
       0% {
         transform:  translate(0px,0px)  ;
       }
@@ -229,13 +229,13 @@ const keyframesExamples = [{
   name: 'rotate out',
   animation: `
     .element-animation{
-      animation: animationFrames linear 0.7s;
+      animation: rotateOut linear 0.7s;
       animation-iteration-count: 1;
       transform-origin: 50% 50%;
     }
   `,
   keyframes: `
-    @keyframes animationFrames{
+    @keyframes rotateOut{
       0% {
         opacity:1;
         transform:  rotate(0deg) ;
@@ -250,13 +250,13 @@ const keyframesExamples = [{
   name: 'rotate in down',
   animation: `
     .element-animation{
-      animation: animationFrames linear 0.7s;
+      animation: rotateIn linear 0.7s;
       animation-iteration-count: 1;
       transform-origin: 0% 100%;
     }
   `,
   keyframes: `
-    @keyframes animationFrames{
+    @keyframes rotateIn{
       0% {
         opacity:0;
         transform:  rotate(-90deg) ;
@@ -267,6 +267,6 @@ const keyframesExamples = [{
       }
     }
   `,
-}]
+}];
 
 export default keyframesExamples;
