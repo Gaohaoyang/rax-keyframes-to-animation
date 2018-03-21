@@ -2,7 +2,17 @@
   "name": "rax-keyframes-to-animation",
   "author": "HyG",
   "main": "src/keyframesToAnimation.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gaohaoyang/rax-keyframes-to-animation.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gaohaoyang/rax-keyframes-to-animation/issues"
+  },
+  "homepage": "https://github.com/Gaohaoyang/rax-keyframes-to-animation#readme",
   "scripts": {
     "start": "rax-scripts start",
     "build": "rax-scripts build",
@@ -23,15 +33,5 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "rax-scripts": "^0.5.4"
-  },
-  "description": "## Getting Started",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Gaohaoyang/rax-keyframes-to-animation.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Gaohaoyang/rax-keyframes-to-animation/issues"
-  },
-  "homepage": "https://github.com/Gaohaoyang/rax-keyframes-to-animation#readme"
+  }
 }
