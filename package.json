@@ -2,7 +2,7 @@
   "name": "rax-keyframes-to-transition",
   "author": "HyG",
   "main": "src/keyframesToTransition.js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "start": "rax-scripts start",
     "build": "rax-scripts build",
