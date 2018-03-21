@@ -2,7 +2,7 @@
  * @Author: ChuanShi.ghy
  * @Date: 2018-03-19 13:08:12
  * @Last Modified by: ChuanShi.ghy
- * @Last Modified time: 2018-03-22 00:24:02
+ * @Last Modified time: 2018-03-22 02:08:57
  */
 import { createElement, Component, render, findDOMNode } from 'rax';
 import View from 'rax-view';
@@ -26,11 +26,9 @@ class App extends Component {
   runAnimation = (index = 0) => {
     const box = findDOMNode(this.box); // 获取元素
     // 调用动画方法
-    setTimeout(() => {
-      keyframesToAnimation(box, keyframesExamples[index].animation, keyframesExamples[index].keyframes, () => {
-        console.log('animation end');
-      });
-    }, 0);
+    keyframesToAnimation(box, keyframesExamples[index].animation, keyframesExamples[index].keyframes, () => {
+      console.log('animation end');
+    });
   }
 
   onValueChange = (index) => {

@@ -100,11 +100,9 @@ class App extends Component {
   runAnimation = () => {
     const box = findDOMNode(this.box); // 获取元素
     // 调用动画方法
-    setTimeout(() => {
-      KeyframesToAnimation(box, animationStr, keyframesStr, () => {
-        console.log('animation end');
-      });
-    }, 0);
+    KeyframesToAnimation(box, animationStr, keyframesStr, () => {
+      console.log('animation end');
+    });
   }
 
   render() {
