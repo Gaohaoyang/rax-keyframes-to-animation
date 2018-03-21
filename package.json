@@ -2,7 +2,7 @@
   "name": "rax-keyframes-to-animation",
   "author": "HyG",
   "main": "src/keyframesToAnimation.js",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "convert keyframes code to animation, use keyframes in rax. 使用 CSS 3 中的 keyframes 语法来写 rax 动画",
   "repository": {
     "type": "git",
