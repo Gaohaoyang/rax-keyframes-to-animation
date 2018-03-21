@@ -42,7 +42,7 @@ npm i rax-keyframes-to-animation -S
 import { createElement, Component, render, findDOMNode } from 'rax';
 import View from 'rax-view';
 import Text from 'rax-text';
-import KeyframesToAnimation from 'rax-keyframes-to-animation';
+import keyframesToAnimation from 'rax-keyframes-to-animation';
 
 import './App.css';
 
@@ -100,7 +100,7 @@ class App extends Component {
   runAnimation = () => {
     const box = findDOMNode(this.box); // 获取元素
     // 调用动画方法
-    KeyframesToAnimation(box, animationStr, keyframesStr, () => {
+    keyframesToAnimation(box, animationStr, keyframesStr, () => {
       console.log('animation end');
     });
   }
@@ -153,7 +153,7 @@ export default App;
 
 ## Api
 
-### KeyframesToAnimation(node, animationStr, keyframesStr, callback)
+### keyframesToAnimation(node, animationStr, keyframesStr, callback)
 
 功能：用于执行动画
 
