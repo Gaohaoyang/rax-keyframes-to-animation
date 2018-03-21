@@ -1,6 +1,16 @@
 # Keyframes to Animation in rax
 
-使用 CSS 3 中的 keyframes 语法来写 rax 动画。
+在 rax 中使用 CSS 3 中的 keyframes 语法来写 rax 动画。
+
+## Demo
+
+- web 版
+https://gaohaoyang.github.io/rax-keyframes-to-animation/demo/
+![](https://gw.alicdn.com/tfs/TB1nfHpe1SSBuNjy0FlXXbBpVXa-200-200.png)
+
+- weex版（请使用具有 weex 环境的 app 扫码预览，如手淘）:
+https://gaohaoyang.github.io/rax-keyframes-to-animation/demo/bundle.min.js?_wx_tpl=https://gaohaoyang.github.io/rax-keyframes-to-animation/demo/bundle.min.js
+![](https://gw.alicdn.com/tfs/TB1jRTse7yWBuNjy0FpXXassXXa-200-200.png)
 
 ## 原理
 
