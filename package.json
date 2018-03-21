@@ -1,8 +1,8 @@
 {
-  "name": "rax-keyframes-to-transition",
+  "name": "rax-keyframes-to-animation",
   "author": "HyG",
-  "main": "src/keyframesToTransition.js",
-  "version": "0.0.1",
+  "main": "src/keyframesToAnimation.js",
+  "version": "0.0.2",
   "scripts": {
     "start": "rax-scripts start",
     "build": "rax-scripts build",
