@@ -2,7 +2,7 @@
  * @Author: ChuanShi.ghy
  * @Date: 2018-03-19 13:08:12
  * @Last Modified by: ChuanShi.ghy
- * @Last Modified time: 2018-03-21 15:42:29
+ * @Last Modified time: 2018-03-21 16:12:05
  */
 import { createElement, Component, render, findDOMNode } from 'rax';
 import View from 'rax-view';
@@ -44,7 +44,7 @@ class App extends Component {
       keyframesToAnimation(box, keyframesExamples[index].animation, keyframesExamples[index].keyframes, () => {
         console.log('animation end');
       });
-    }, 40);
+    }, 0);
   }
 
   onValueChange = (index) => {

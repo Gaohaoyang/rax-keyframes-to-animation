@@ -2,7 +2,7 @@
  * @Author: ChuanShi.ghy
  * @Date: 2018-03-19 13:08:18
  * @Last Modified by: ChuanShi.ghy
- * @Last Modified time: 2018-03-21 15:44:13
+ * @Last Modified time: 2018-03-21 16:11:56
  */
 import { isWeex } from 'universal-env';
 
@@ -164,7 +164,9 @@ const keyframesToAnimation = (node, animationStr, keyframes, cb) => {
         }
       });
     };
-    runOnce();
+    setTimeout(() => {
+      runOnce();
+    }, 0);
   } else {
     // web 下直接使用 css3 的 keyframes
     const keyframesName = keyframes.trim().match(/\s*@keyframes\s(\w+)\s*\{\n/)[1];
