@@ -162,18 +162,22 @@ export default App;
 参数：
 
 - node
+
   dom 节点
 
 
 - animationStr
+
   animation CSS 代码字符串，注意 animation name 要与 keyframes 中的 name 对应
 
 
 - keyframesStr
+
   keyframes CSS 代码字符串，注意 keyframes name 要与 animation 中的 name 对应
 
 
 - callback
+
   回调函数，注意当 `animation-iteration-count` 值为 infinite 时，回调函数永远不会执行
 
 ## 原理
