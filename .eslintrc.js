@@ -1,3 +1,7 @@
 module.exports = {
-  "extends": "airbnb"
+  extends: 'airbnb',
+  globals: {
+    document: false,
+    __weex_require__: false,
+  },
 };

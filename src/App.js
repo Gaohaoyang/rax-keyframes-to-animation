@@ -2,7 +2,7 @@
  * @Author: ChuanShi.ghy
  * @Date: 2018-03-19 13:08:12
  * @Last Modified by: ChuanShi.ghy
- * @Last Modified time: 2018-03-20 17:17:29
+ * @Last Modified time: 2018-03-21 15:42:29
  */
 import { createElement, Component, render, findDOMNode } from 'rax';
 import View from 'rax-view';
@@ -41,7 +41,9 @@ class App extends Component {
     const box = findDOMNode(this.box); // 获取元素
     // 调用动画方法
     setTimeout(() => {
-      keyframesToAnimation(box, keyframesExamples[index].animation, keyframesExamples[index].keyframes);
+      keyframesToAnimation(box, keyframesExamples[index].animation, keyframesExamples[index].keyframes, () => {
+        console.log('animation end');
+      });
     }, 40);
   }
 

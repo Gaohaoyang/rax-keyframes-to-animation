@@ -1,9 +1,9 @@
 const keyframesExamples = [{
-  name: 'tada 3 times',
+  name: 'tada twice',
   animation: `
     .element-animation{
       animation: tada linear 1s;
-      animation-iteration-count: 3;
+      animation-iteration-count: 2;
       transform-origin: 50% 50%;
     }
   `,
@@ -79,12 +79,13 @@ const keyframesExamples = [{
     }
   `,
 }, {
-  name: 'swing',
+  name: 'swing delay 3s',
   animation: `
     .element-animation{
       animation: swing linear 1s;
       animation-iteration-count: 1;
       transform-origin: 50% 0%;
+      animation-delay: 3s;
     }
   `,
   keyframes: `
@@ -166,7 +167,6 @@ const keyframesExamples = [{
       animation: hinge ease 1s;
       animation-iteration-count: 1;
       transform-origin: 0% 0%;
-      animation-fill-mode:forwards; /*when the spec is finished*/
     }
   `,
   keyframes: `
@@ -264,6 +264,32 @@ const keyframesExamples = [{
       100% {
         opacity:1;
         transform:  rotate(0deg) ;
+      }
+    }
+  `,
+}, {
+  name: 'bounce out left',
+  animation: `
+    .element-animation{
+      animation: bounceOutLeft ease 0.4s;
+      animation-iteration-count: 1;
+      transform-origin: 50% 50%;
+      animation-fill-mode:forwards; /*when the spec is finished*/
+    }
+  `,
+  keyframes: `
+    @keyframes bounceOutLeft{
+      0% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+      }
+      10% {
+        opacity:1;
+        transform:  translate(30px,0px)  ;
+      }
+      100% {
+        opacity:0;
+        transform:  translate(-400px,0px)  ;
       }
     }
   `,
