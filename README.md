@@ -166,11 +166,11 @@ export default App;
 
 
 - animationStr
-  animation CSS 代码字符串，注意 animation name 要与 keyframes 中的 name 对应
+  animation CSS 代码字符串，注意 animation name 要与 keyframes 中的 name 对应
 
 
 - keyframesStr
-  keyframes CSS 代码字符串，注意 keyframes name 要与 animation 中的 name 对应
+  keyframes CSS 代码字符串，注意 keyframes name 要与 animation 中的 name 对应
 
 
 - callback
