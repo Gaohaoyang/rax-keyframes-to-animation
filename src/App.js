@@ -2,7 +2,7 @@
  * @Author: ChuanShi.ghy
  * @Date: 2018-03-19 13:08:12
  * @Last Modified by: ChuanShi.ghy
- * @Last Modified time: 2018-03-21 16:12:05
+ * @Last Modified time: 2018-03-22 00:24:02
  */
 import { createElement, Component, render, findDOMNode } from 'rax';
 import View from 'rax-view';
@@ -13,24 +13,10 @@ import keyframesExamples from './keyframesExamples';
 
 import './App.css';
 
-// const styles = {
-//   box: {
-//     width: 100,
-//     height: 100,
-//     marginLeft: 160,
-//     marginTop: 300,
-//     backgroundColor: '#5c8fdb',
-//     borderRadius: 10,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//   }
-// };
-
 class App extends Component {
 
   state = {
     selectedValue: 0,
-    // animationStyle: {},
   }
 
   componentDidMount = () => {

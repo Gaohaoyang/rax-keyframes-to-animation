@@ -2,7 +2,7 @@
  * @Author: ChuanShi.ghy
  * @Date: 2018-03-19 13:08:24
  * @Last Modified by: ChuanShi.ghy
- * @Last Modified time: 2018-03-20 00:39:34
+ * @Last Modified time: 2018-03-22 00:30:19
  */
 
 .container {
@@ -25,11 +25,13 @@
   justify-content: center;
   align-items: center;
 }
-.boxText{
+
+.boxText {
   color: #fff;
   font-size: 30;
 }
-.pickerArea{
+
+.pickerArea {
   width: 300;
   height: 120;
   position: absolute;
@@ -40,7 +42,8 @@
   justify-content: center;
   align-items: center;
 }
-.title{
+
+.title {
   color: #333;
   font-size: 28;
 }
