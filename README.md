@@ -37,7 +37,7 @@ npm i rax-keyframes-to-animation -S
 
 使用示例
 
-``` js
+``` jsx
 // App.js
 import { createElement, Component, render, findDOMNode } from 'rax';
 import View from 'rax-view';
@@ -159,14 +159,14 @@ export default App;
 
 功能：用于执行动画
 
-参数：
+参数：
 
 - node
   dom 节点
 
 
 - animationStr
-  animation CSS 代码字符串，注意 animation name 要与 keyframes 中的 name 对应
+  animation CSS 代码字符串，注意 animation name 要与 keyframes 中的 name 对应
 
 
 - keyframesStr
@@ -178,11 +178,11 @@ export default App;
 
 ## 原理
 
-首先将输入的 animationStr 和 keyframesStr 进行解析。
+首先将输入的 animationStr 和 keyframesStr 进行解析。
 
 weex 中使用 `@weex-module/animation` 进行动画调用，使用递归的方式执行每一个关键帧的样式。
 
-web 中直接将 keyframesStr 直接插入到样式表中，在 dom 元素上修改 animation 属性进行动画。
+web 中直接将 keyframesStr 直接插入到样式表中，在 dom 元素上修改 animation 属性进行动画。
 
 ## Contribute
 
