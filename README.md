@@ -1,8 +1,8 @@
 # Keyframes to Animation in rax
 
-<div style="text-align: center;margin-top:80px;margin-bottom:80px">
-  <img src="https://gw.alicdn.com/tfs/TB1O2BLfmBYBeNjy0FeXXbnmFXa-536-184.png" width="360px" />
-</div>
+<p align="center" style="margin-top:80px;margin-bottom:80px"> 
+  <img src="https://gw.alicdn.com/tfs/TB1O2BLfmBYBeNjy0FeXXbnmFXa-536-184.png" width="320px" />
+</p>
 
 在 rax 中使用 CSS 3 中的 keyframes 语法来写 rax 动画。
 
