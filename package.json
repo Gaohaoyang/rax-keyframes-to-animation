@@ -2,7 +2,7 @@
   "name": "rax-keyframes-to-animation",
   "author": "HyG",
   "main": "src/keyframesToAnimation.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "repository": {
     "type": "git",
